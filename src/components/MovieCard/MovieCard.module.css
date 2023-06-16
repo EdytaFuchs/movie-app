@@ -1,0 +1,23 @@
+.card {
+  background-color: #fff;
+  border-radius: 8px;
+  display: flex;
+  overflow: hidden;
+}
+.poster {
+  width: 100px;
+  height: 150px;
+  object-fit: cover;
+}
+.content {
+  padding: 12px;
+}
+.title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+.overview {
+  font-size: 14px;
+  color: #777;
+}
