@@ -1,0 +1,29 @@
+.banner {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 350px;
+  max-width: 1200px;
+  width: 90%;
+  margin: 30px auto;
+  border-radius: 30px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.title {
+  font-size: 5rem;
+}
+
+.link {
+  background-color: rgb(209, 65, 13);
+  max-width: 180px;
+  padding: 8px;
+  border-radius: 20px;
+  margin-top: 14px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
