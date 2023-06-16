@@ -1,8 +1,7 @@
 .card {
   background-color: #fff;
-  border-radius: 8px;
-  display: flex;
-  overflow: hidden;
+  min-width: 200px;
+  flex-shrink: 0;
 }
 .poster {
   width: 100px;
