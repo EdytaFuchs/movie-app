@@ -22,7 +22,7 @@ const HomePage = () => {
         style={{ backgroundImage: `url(${bannerImage})` }}
         className={styles.banner}
       >
-        <h1 className={styles.title}>{bannerMovie.title}</h1>
+        <h1 className={styles.vote}>{bannerMovie.vote}</h1>
         <Link className={styles.link} to="/">
           Oglądaj
         </Link>
@@ -30,7 +30,7 @@ const HomePage = () => {
 
       <section>
         <h2>Najpopularniejsze</h2>
-        <div>
+        <div className={styles.contener}>
           {popularMovies.data.map((movie) => (
             <MovieCard key={movie.id} movie={movie} />
           ))}
