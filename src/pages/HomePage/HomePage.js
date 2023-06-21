@@ -1,12 +1,12 @@
-import React from "react";
-import styles from "./HomePage.module.css";
-import { useFetch } from "../../hooks/useFetch";
-import { Link } from "react-router-dom";
-import MovieCard from "../../components/MovieCard/MovieCard";
+import React from 'react';
+import styles from './HomePage.module.css';
+import { useFetch } from '../../hooks/useFetch';
+import { Link } from 'react-router-dom';
+import MovieCard from '../../components/MovieCard/MovieCard';
 
 const HomePage = () => {
-  const playingMovies = useFetch("movie/now_playing");
-  const popularMovies = useFetch("movie/popular");
+  const playingMovies = useFetch('movie/now_playing');
+  const popularMovies = useFetch('movie/popular');
 
   const bannerMovie = playingMovies.data[0];
 

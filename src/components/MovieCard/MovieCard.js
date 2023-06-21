@@ -1,6 +1,6 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import styles from "./MovieCard.module.css";
+import React from 'react';
+import { Link } from 'react-router-dom';
+import styles from './MovieCard.module.css';
 
 const MovieCard = ({ movie }) => {
   const { vote, poster_path, title } = movie;
