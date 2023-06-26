@@ -2,6 +2,7 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 import { useFetch } from '../../hooks/useFetch';
 import styles from './DetailsPage.module.css';
+import ActorCard from '../../components/MovieCard/ActorCard/ActorCard';
 
 const DetailsPage = () => {
   const params = useParams();
@@ -34,10 +35,12 @@ const DetailsPage = () => {
           <p>{release_date}</p>
         </div>
         <div className={styles.cast}>
-          <h2>Cast</h2>
-          {cast?.map((actor) => (
-            <p key={actor.div}>{actor.name}</p>
-          ))}
+          <h1>{movie.data.original_title}</h1>
+          <div className={styles.wrapper}>
+            {cast?.map((actor) => (
+              <ActorCard actor={actor} key={actor.id} />
+            ))}
+          </div>
         </div>
       </div>
     </div>
